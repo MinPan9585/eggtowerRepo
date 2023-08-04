@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/DialogScene0804.unity
+    guid: 69395876068abf2449427084049e6922
+  - enabled: 1
+    path: Assets/Scenes/TimerScene0804.unity
+    guid: e5607e47eff3d174986cc82e3da16fea
   m_configObjects: {}
