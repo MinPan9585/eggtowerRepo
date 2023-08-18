@@ -15,7 +15,7 @@ public class Dialog : MonoBehaviour
     void Start()
     {
         index = 0;
-        character1.SetActive(false);
+        //character1.SetActive(true);
         sentenceText.text = sentenceTalk[index];
     }
 
@@ -23,7 +23,7 @@ public class Dialog : MonoBehaviour
     public void MoveNext()
     {
         index++;
-        character1.SetActive(true);
+        //character1.SetActive(true);
         sentenceText.text = sentenceTalk[index];
     }
 }
