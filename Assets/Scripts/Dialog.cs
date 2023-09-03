@@ -11,6 +11,7 @@ public class Dialog : MonoBehaviour
     public string[] sentenceTalk;
     public TMP_Text sentenceText;
     public int index;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,5 +26,13 @@ public class Dialog : MonoBehaviour
         index++;
         //character1.SetActive(true);
         sentenceText.text = sentenceTalk[index];
+    }
+
+    private void Update()
+    {
+        if(index == sentenceTalk.Length - 1)
+        {
+            GameController.instance.LoadNextLevel();
+        }
     }
 }
