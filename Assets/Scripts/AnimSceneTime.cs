@@ -6,8 +6,6 @@ public class AnimSceneTime : MonoBehaviour
 {
     float timer = 10f;
 
-
-    // Update is called once per frame
     void Update()
     {
         timer -= Time.deltaTime;
