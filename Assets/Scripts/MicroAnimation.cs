@@ -16,9 +16,16 @@ public class MicroAnimation : MonoBehaviour{
     {
         
     }
-    public void  OnClick()
+    void OnMouseDown()
     {
         Debug.Log("isClick");
         gaminitor.GetComponent<Animator>().enabled = true;
+        StartCoroutine("LoadNextL");
+    }
+
+    IEnumerator LoadNextL()
+    {
+        yield return new WaitForSeconds(4.5f);
+        GameController.instance.LoadNextLevel();
     }
 }

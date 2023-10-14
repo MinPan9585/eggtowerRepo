@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/PickColorScene0911_4.unity
     guid: 177a1340d23b386439a48cdd3d8de749
   - enabled: 1
-    path: Assets/Scenes/AnimScene1008_5.unity
+    path: Assets/Scenes/microAnimationScene_5.unity
     guid: f5888e66c95d235459246c01bb9ca47d
+  - enabled: 1
+    path: Assets/Scenes/SceneTest_6.unity
+    guid: 9a834143040dc784ca940ed4aae51ceb
   m_configObjects: {}
