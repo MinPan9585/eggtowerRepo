@@ -47,7 +47,7 @@ public class Pigment : MonoBehaviour
                 anim.SetTrigger("Used");
                 //ran se
                 StartCoroutine(ChangeEggColor());
-  
+                PigmentColorSelected.instance.colorId = id;
             }
             else
             {
