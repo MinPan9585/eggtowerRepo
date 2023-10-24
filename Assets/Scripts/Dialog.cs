@@ -11,6 +11,7 @@ public class Dialog : MonoBehaviour
     public string[] sentenceTalk;
     public TMP_Text sentenceText;
     public int index;
+    public AudioSource button;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,8 @@ public class Dialog : MonoBehaviour
         index++;
         //character1.SetActive(true);
         sentenceText.text = sentenceTalk[index];
+        button.Play();
+
     }
 
     private void Update()

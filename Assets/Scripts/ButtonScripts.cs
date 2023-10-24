@@ -12,6 +12,7 @@ public class ButtonScripts : MonoBehaviour
     public void StartGameButton()
     {
         SceneManager.LoadScene("DialogScene0903_1");
+        AS.Play();
     }
 
     public void NextButton()
@@ -23,15 +24,18 @@ public class ButtonScripts : MonoBehaviour
     public void DoneButton100()
     {
         SceneManager.LoadScene("Ending100");
+        AS.Play();
     }
 
     public void DoneButton70()
     {
         SceneManager.LoadScene("Ending70");
+        AS.Play();
     }
 
     public void DoneButton20()
     {
         SceneManager.LoadScene("Ending20");
+        AS.Play();
     }
 }
