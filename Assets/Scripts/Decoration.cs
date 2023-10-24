@@ -8,10 +8,13 @@ public class Decoration : MonoBehaviour
 
     // Update is called once per frame
     private bool done;
+    private GameObject CakeObj;
+
 
     void Start()
     {
         done = false;
+        CakeObj = GameObject.Find("bluecake");
     }
     void Update()
     {
@@ -26,6 +29,7 @@ public class Decoration : MonoBehaviour
         {
             done = true;
             this.GetComponent<Decoration>().enabled = false;
+            this.transform.SetParent(CakeObj.transform);
         }
     }
 }

@@ -6,7 +6,7 @@ public class CreamBagButton : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject CurrentCreamShape;
-    public GameObject CreamBagButtonImage, CreamBagMouse;
+    public GameObject CreamBagButtonImage, CreamBagMouse, DontDestryCakeParent;
     public Transform creamTarget;
     public bool PickedUp;
     public void PickUpCreamBag()
@@ -32,6 +32,7 @@ public class CreamBagButton : MonoBehaviour
     {
         GameObject creamshape = Instantiate(CurrentCreamShape);
         creamshape.transform.position = creamTarget.position;
+        creamshape.transform.SetParent(DontDestryCakeParent.transform);
     }
 
     void OnMouseDown()
